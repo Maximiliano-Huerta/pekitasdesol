@@ -453,8 +453,6 @@ footer div a img {
 }
 
 
-
-
 @media screen and (max-width:410px) {
     .promocion img {
         width: 100px;
@@ -467,6 +465,14 @@ footer div a img {
         width: 300px;
         height: 100px;
     }
+    footer h2 {
+        font-size: 20px;
+    }
+    footer div a img {
+        width: 30px;
+        height: 30px;
+    }
+
 }
 
 /*!-----INDEX-----*/
