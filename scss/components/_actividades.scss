@@ -1,0 +1,39 @@
+.fotos {
+    margin: 25px;
+  h3 {
+    text-align: center;
+    padding: 10px;
+  }
+  p {
+    text-align: start;
+    font-size: 25px;
+    font-family: cursive;
+    margin: 5px;
+    padding: 10px;
+  }
+}
+.figure {
+  background-color: rgba(253, 204, 6, 0.295);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 5px;
+  img {
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+}
+
+  .figure-caption {
+    color: rgb(18, 16, 9);
+    font-size: 20px;
+    text-align: center;
+  }
+
+.actividad-p {
+  font-size: 25px;
+  text-align: center;
+}

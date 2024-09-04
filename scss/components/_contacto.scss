@@ -1,0 +1,44 @@
+h3 {
+  font-size: 30px;
+  padding: 10px;
+  margin: 20px;
+}
+form {
+  background-color: rgba(208, 80, 60, 0.707);
+  border-radius: 5px;
+  color: #100f0f;
+  font-size: 15px;
+  padding: 10px;
+  margin: 20px;
+  width: 400px;
+  p {
+    margin: 5px;
+  }
+}
+
+input,
+textarea {
+  border: 0;
+  outline: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.field {
+  border: solid 1px #dfb5b5;
+  padding: 10px;
+}
+
+.field:focus {
+  border-color: #18a383;
+}
+
+.center-content {
+  width: 40%;
+  padding: 5px;
+}
+
+.video-contenedor iframe {
+  padding: 10px;
+  margin: 10px;
+}
