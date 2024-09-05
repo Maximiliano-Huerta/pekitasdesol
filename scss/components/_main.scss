@@ -2,22 +2,27 @@
 .hero {
   width: 100%;
   height: 600px;
-  background-image: url("../img/foto\ grupal.jpg");
+  background-image: url("../img/foto\ grupal.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
+}
+.hero {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  h1 {
-    font-family: cursive;
-    font-size: 100px;
-    text-align: center;
-    color: #ddf00b;
-  }
 }
+.hero h1 {
+  font-family: cursive;
+  font-size: 100px;
+  text-align: center;
+  color: #ddf00b;
+}
+
+
+
 /* seccion Nosotros*/
 
 .nosotros {
