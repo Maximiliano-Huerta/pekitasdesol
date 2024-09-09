@@ -4,6 +4,7 @@ h3 {
   margin: 20px;
 }
 form {
+  align-content: center;
   background-color: rgba(208, 80, 60, 0.707);
   border-radius: 5px;
   color: #100f0f;
@@ -38,7 +39,46 @@ textarea {
   padding: 5px;
 }
 
+.datos-personales {
+  background-color: #dfb5b58c;
+  display: grid;
+  justify-content: center;
+  a img{
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+  h1{
+font-size: 30px;
+text-align: center;
+}
+}
 .video-contenedor iframe {
   padding: 10px;
   margin: 10px;
+}
+
+@media screen and (max-width: 440px) {
+  form {
+    font-size: 15px;
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+}
+.center-content {
+  width: 50%;
+  padding: 5px;
+}
+.datos-personales {
+  a img{
+  width: 200px;
+  height: 200px;
+}}
+.datos-personales h1 {
+font-size: 20px;
+}
+.video-contenedor iframe {
+width: 300px;
+height: 200px ;
+}
 }

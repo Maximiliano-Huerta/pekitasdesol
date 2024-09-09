@@ -50,7 +50,7 @@
     font-size: 60px;
   }
   .promocion{
-    height: 200px;
+    height: 250px;
   }
   .promocion p{
     font-size: 10px;
@@ -68,7 +68,11 @@
   .hero {
     width: 100%;
     height: 300px;
-  }}
+  }
+}
+
+
+
 @media screen and (max-width: 668px) {
   .nosotros h2 {
     text-align: center;
@@ -99,18 +103,18 @@
 }
 @media screen and (max-width: 621px) {
 .promocion{
-padding: 20px;
-justify-content: center;
-font-size: 20px;
+  font-size: 20px;
+  margin: 5px;
 }
 .promocion img{
- width: 100px;
+  width: 90px;
 }
 .promocion a{
   font-size: 10px;
+  bottom: 20px;
+  border-radius: 10px;
 }
 }
-
 
 @media screen and (max-width: 572px) {
   .mapa-ubicacion {
@@ -123,7 +127,10 @@ font-size: 20px;
     width: 400px;
     height: 200px;
   }
-
+  
+  .grid-imagenes h3{
+    font-size: 20px;
+  }
   .hero {
     width: 100%;
     height: 300px;
@@ -166,14 +173,17 @@ font-size: 20px;
     padding: 5px;
     grid-gap: 5px;
   }
-
-  .img-7 {
+  .grid-imagenes h3 {
+    font-size: 15px;
+  }
+    .img-7 {
     grid-column: span 1;
   }
-
-  .img-8 {
+    .img-8 {
     grid-column: span 1;
   }
+  
+
 }
 
 @media screen and (max-width: 480px) {
@@ -204,7 +214,7 @@ font-size: 20px;
     grid-column: span 1;
   }
   .promocion h2{
- font-size: 20px;
+  font-size: 20px;
   }
   .promocion a{
     font-size: 10px;
@@ -213,10 +223,17 @@ font-size: 20px;
     width: 150px;
   }
 }
+@media screen and (max-width: 420px) {
+  .promocion h2{
+  font-size: 15px;
+  }
+
+}
+
 
 @media screen and (max-width: 410px) {
   .promocion h2 {
-   font-size: 20px;
+   font-size: 10px;
   }
   .promocion p {
     font-size: 10px;
@@ -227,27 +244,31 @@ font-size: 20px;
     width: 300px;
     height: 100px;
   }
-
-  footer h2 {
-    font-size: 20px;
-  }
-
-  footer div a img {
-    width: 30px;
-    height: 30px;
-  }
-
-@media screen and (max-width: 372px) {
-.promocion h2{
-  font-size: 15px;
+}
+  
+  @media screen and (max-width: 385px) {
+    .promocion a{
+      font-size: 8px;
+    }
 }
 
+@media screen and (max-width: 372px) {
+  .promocion h2{
+  font-size: 10px;
+}
+.promocion a {
+  font-size:5px ;
+}
+.promocion img {
+  width: 150px;
+}
 }
 @media screen and (max-width: 354px) {
   .promocion a{
     font-size: 8px;
   }
-
+  .promocion img {
+    width: 100px;
+  }
 }
 
-}
