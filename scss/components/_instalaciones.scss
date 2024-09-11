@@ -1,17 +1,15 @@
 h1 {
-  font-size: 35px;
+  font-size: nth($font , 5);
   text-align: center;
   padding: 10px;
 }
 h2 {
-  font-size: 30px;
+  font-size: nth($font , 4);
   padding: 10px;
 }
 
 .pileta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex (flex,center,center);
   img {
     width: 600px;
     height: 300px;
@@ -19,30 +17,29 @@ h2 {
   }
 }
   p{
-    font-size: 20px;
+    font-size: nth($font , 2);
     margin: 10px;
   }
 
 
 .ficha-medica {
-  background-color: rgba(240, 152, 20, 0.312);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: nth($color, 4);
+
+  @include flex (flex,center,center);
 
   a img {
     height: 200px;
     width: 200px;
   }
   h1 {
-    font-size: 25px;
-    color: rgb(10, 10, 10);
+    font-size:nth($font , 3);
+    color: nth($color, 1);
     text-align: center;
   }
 }
   .mapa-ubicacion h2 {
-    color: rgb(12, 12, 12);
-    font-size: 20px;
+    color: nth($color, 1);
+    font-size: nth($font , 2);
     text-align: center;
   }
 
@@ -71,20 +68,20 @@ h2 {
   }
   @media screen and (max-width: 526px) {
     h1{
-      font-size: 30px;
+      font-size: nth($font , 4);
     }
     h2{
-      font-size: 15px;
+      font-size: nth($font , 1);
     }
     p{
-      font-size: 15px;
+      font-size: nth($font , 1);
     }
     .ficha-medica a img {
     height: 100px;
     width: 100px;
     }
     .ficha-medica h1{
-      font-size: 15px;
+      font-size: nth($font , 1);
     }
   }
   @media screen and (max-width: 510px) {
@@ -103,6 +100,6 @@ h2 {
       margin: 5px;
   }
   h1{
-    font-size: 20px;
+    font-size: nth($font , 2);
   }
   }

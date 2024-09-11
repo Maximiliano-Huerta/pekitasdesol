@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 1080px) {
   .nosotros p {
-    font-size: 12px;
+    font-size:nth($font , 7);
   }
 
   .nosotros img {
@@ -11,11 +11,11 @@
   }
 
   .promocion h2 {
-    font-size: 25px;
+    font-size: nth($font , 3);
   }
 
   .promocion p {
-    font-size: 20px;
+    font-size: nth($font , 2);
   }
 
   .promocion img {
@@ -40,20 +40,20 @@
 
 @media screen and (max-width: 925px) {
   .novedades p {
-    font-size: 10px;
+    font-size: nth($font , 8);
     text-align: center;
   }
 }
 
 @media screen and (max-width: 879px) {
   .hero h1 {
-    font-size: 60px;
+    font-size: nth($font , 9);
   }
   .promocion{
     height: 250px;
   }
   .promocion p{
-    font-size: 10px;
+    font-size: nth($font , 8);
   }
   .promocion img {
     height: 150px;
@@ -62,7 +62,7 @@
 
 @media screen and (max-width: 800px) {
   .nosotros {
-    font-size: 30;
+    font-size: nth($font , 4);
   }
 
   .hero {
@@ -84,11 +84,11 @@
   }
 
   .nosotros p {
-    font-size: 10px;
+    font-size: nth($font , 8);
   }
 
   .promocion p {
-    font-size: 10px;
+    font-size: nth($font , 8);
   }
 
   .hero {
@@ -103,14 +103,14 @@
 }
 @media screen and (max-width: 621px) {
 .promocion{
-  font-size: 20px;
+  font-size: nth($font , 2);
   margin: 5px;
 }
 .promocion img{
   width: 90px;
 }
 .promocion a{
-  font-size: 10px;
+  font-size: nth($font , 8);
   bottom: 20px;
   border-radius: 10px;
 }
@@ -129,7 +129,7 @@
   }
   
   .grid-imagenes h3{
-    font-size: 20px;
+    font-size: nth($font , 2);
   }
   .hero {
     width: 100%;
@@ -141,11 +141,11 @@
 
 @media screen and (max-width: 552px) {
   .hero h1 {
-    font-size: 40px;
+    font-size: nth($font , 10);
   }
 
   .novedades h2 {
-    font-size: 15px;
+    font-size: nth($font , 1);
   }
 
   .grid-imagenes {
@@ -159,7 +159,7 @@
 
 @media screen and (max-width: 497px) {
   .promocion h3 {
-    font-size: 10px;
+    font-size: nth($font , 8);
   }
 
   .promocion img {
@@ -174,7 +174,7 @@
     grid-gap: 5px;
   }
   .grid-imagenes h3 {
-    font-size: 15px;
+    font-size: nth($font , 1);
   }
     .img-7 {
     grid-column: span 1;
@@ -188,20 +188,20 @@
 
 @media screen and (max-width: 480px) {
   .novedades p {
-    font-size: 10px;
+    font-size: nth($font , 8);
   }
   .promocion {
     height: 250px;
   }
   .promocion p {
-    font-size: 10px;
+    font-size: nth($font , 8);
   }
   .promocion img {
     width: 200px;
     height: 200px;
   }
   .promocion a{
-    font-size: 15px;
+    font-size: nth($font , 1);
   }
 }
 
@@ -214,10 +214,10 @@
     grid-column: span 1;
   }
   .promocion h2{
-  font-size: 20px;
+  font-size: nth($font , 2);
   }
   .promocion a{
-    font-size: 10px;
+    font-size: nth($font , 8);
   }
   .promocion img{
     width: 150px;
@@ -225,7 +225,7 @@
 }
 @media screen and (max-width: 420px) {
   .promocion h2{
-  font-size: 15px;
+  font-size: nth($font , 1);
   }
 
 }
@@ -233,10 +233,10 @@
 
 @media screen and (max-width: 410px) {
   .promocion h2 {
-   font-size: 10px;
+   font-size: nth($font , 8);
   }
   .promocion p {
-    font-size: 10px;
+    font-size: nth($font , 8);
   }
 }
 @media screen and (max-width: 406px) {
@@ -254,7 +254,7 @@
 
 @media screen and (max-width: 372px) {
   .promocion h2{
-  font-size: 10px;
+  font-size: nth($font , 8);
 }
 .promocion a {
   font-size:5px ;

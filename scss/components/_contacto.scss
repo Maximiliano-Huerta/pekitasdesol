@@ -1,14 +1,14 @@
 h3 {
-  font-size: 30px;
+  font-size: nth($font , 4);
   padding: 10px;
   margin: 20px;
 }
 form {
   align-content: center;
-  background-color: rgba(208, 80, 60, 0.707);
+  background-color: $color-secundario;
   border-radius: 5px;
-  color: #100f0f;
-  font-size: 15px;
+  color: nth($color, 1);
+  font-size: nth($font , 1);
   padding: 10px;
   margin: 20px;
   width: 400px;
@@ -26,12 +26,12 @@ textarea {
 }
 
 .field {
-  border: solid 1px #dfb5b5;
+  border: solid 1px #dfdfb5;
   padding: 10px;
 }
 
 .field:focus {
-  border-color: #18a383;
+  border-color: #272928;
 }
 
 .center-content {
@@ -40,7 +40,7 @@ textarea {
 }
 
 .datos-personales {
-  background-color: #dfb5b58c;
+  background-color: nth($color, 4);
   display: grid;
   justify-content: center;
   a img{
@@ -49,7 +49,7 @@ textarea {
   margin: 10px;
 }
   h1{
-font-size: 30px;
+font-size: nth($font , 4);
 text-align: center;
 }
 }
@@ -60,7 +60,7 @@ text-align: center;
 
 @media screen and (max-width: 440px) {
   form {
-    font-size: 15px;
+    font-size: nth($font , 1);
     padding: 10px;
     margin: 20px;
     width: 300px;
@@ -75,7 +75,7 @@ text-align: center;
   height: 200px;
 }}
 .datos-personales h1 {
-font-size: 20px;
+font-size: nth($font , 2);
 }
 .video-contenedor iframe {
 width: 300px;

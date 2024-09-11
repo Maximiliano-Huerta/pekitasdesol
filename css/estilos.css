@@ -28,7 +28,11 @@ body {
   bottom: 25px;
   right: 25px;
   text-align: center;
-  font-size: 35px; }
+  font-size: 35px;
+  transition: 1s; }
+
+.whatsapp a img:hover {
+  transform: scale(1.4); }
 
 footer {
   background-color: #ccc75d;
@@ -46,10 +50,20 @@ footer {
 
 header nav div a img {
   width: 90px;
-  height: 90px; }
+  height: 90px;
+  transition: 3s; }
 
 header .menu-color {
   background-color: goldenrod; }
+
+.navbar-brand img:hover {
+  transform: scale(1.2);
+  transition: 3s; }
+
+.nav-item a:hover {
+  background-color: #96ed1d;
+  border-radius: 10px;
+  color: black; }
 
 /* index*/
 .hero {
@@ -63,15 +77,16 @@ header .menu-color {
 
 .hero {
   display: flex;
-  flex-direction: column;
   justify-content: flex-end;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
 
 .hero h1 {
   font-family: cursive;
   font-size: 100px;
   text-align: center;
-  color: #ddf00b; }
+  color: #ddf00b;
+  text-shadow: 5px 5px 5px #161615; }
 
 /* seccion Nosotros*/
 .nosotros {
@@ -104,9 +119,9 @@ header .menu-color {
   text-align: center; }
   .promocion h2 {
     font-size: 30px;
-    color: #1e1d1d; }
+    color: black; }
   .promocion p {
-    color: #141414;
+    color: black;
     font-size: 20px;
     margin: 20px;
     text-align: center; }
@@ -115,7 +130,7 @@ header .menu-color {
     font-size: 20px;
     bottom: 40px;
     border-radius: 10px;
-    background-color: #141412;
+    background-color: black;
     margin: 10px;
     padding: 5px; }
   .promocion div {
@@ -146,7 +161,7 @@ header .menu-color {
     height: 100%;
     object-fit: cover; }
   .grid-imagenes h3 {
-    color: #060606; }
+    color: black; }
 
 .grid-item {
   position: relative; }
@@ -155,7 +170,7 @@ header .menu-color {
     text-align: center;
     position: absolute;
     bottom: 0;
-    color: #100101;
+    color: black;
     width: 90%;
     height: 40px;
     padding: 5px; }
@@ -200,7 +215,7 @@ header .menu-color {
 
 @media screen and (max-width: 800px) {
   .nosotros {
-    font-size: 30; }
+    font-size: 30px; }
   .hero {
     width: 100%;
     height: 300px; } }
@@ -358,7 +373,12 @@ header .menu-color {
   .fotos-actividades img {
     width: 100%;
     height: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    transition: 0.8s ease; }
+
+.fotos-actividades img:hover {
+  transform: scale(1.3);
+  border-radius: 15px; }
 
 .actividad-p p {
   font-size: 25px;
@@ -404,7 +424,7 @@ form {
   align-content: center;
   background-color: rgba(208, 80, 60, 0.707);
   border-radius: 5px;
-  color: #100f0f;
+  color: black;
   font-size: 15px;
   padding: 10px;
   margin: 20px;
@@ -420,18 +440,18 @@ textarea {
   justify-content: center; }
 
 .field {
-  border: solid 1px #dfb5b5;
+  border: solid 1px #dfdfb5;
   padding: 10px; }
 
 .field:focus {
-  border-color: #18a383; }
+  border-color: #272928; }
 
 .center-content {
   width: 40%;
   padding: 5px; }
 
 .datos-personales {
-  background-color: #dfb5b58c;
+  background-color: rgba(240, 152, 20, 0.312);
   display: grid;
   justify-content: center; }
   .datos-personales a img {
@@ -496,11 +516,11 @@ p {
     width: 200px; }
   .ficha-medica h1 {
     font-size: 25px;
-    color: #0a0a0a;
+    color: black;
     text-align: center; }
 
 .mapa-ubicacion h2 {
-  color: #0c0c0c;
+  color: black;
   font-size: 20px;
   text-align: center; }
 
@@ -551,9 +571,9 @@ p {
 
 .club {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   .club h2 {
     text-align: center; }
   .club img {

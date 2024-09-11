@@ -1,8 +1,6 @@
 .club {
-  display: flex;
+  @include flex(flex, center, center);
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   h2 {
     text-align: center;
   }
