@@ -4,8 +4,8 @@
 
 /*-----RESET MARGENES PAGINA-----*/
 * {
-  margin: 0;
-  padding: 0;
+  @include espacio(0,0);
+
   box-sizing: border-box;
 }
 body {
@@ -15,13 +15,13 @@ body {
 /*color nav*/
 
 .menu-color {
-  background-color: goldenrod;
+  background-color:$color-principal;
 }
 
 /*--header--*/
 
 .d-flex {
-  background-color: goldenrod;
+  background-color: $color-principal;
   margin: 10px;
   width: 250px;
 }
@@ -31,34 +31,28 @@ body {
 
 .whatsapp a img {
   position: fixed;
-  width: 60px;
-  height: 60px;
+  @include img(60px, 60px);
   line-height: 63px;
   bottom: 25px;
   right: 25px;
   text-align: center;
-  font-size: 35px;
+  font-size:nth($font ,5);
   transition: 1s;
 }
-
 .whatsapp a img:hover {
   transform: scale(1.4);
 }
 
 
-
-
-
 footer {
-  background-color: rgb(204, 199, 93);
+  background-color:$color-principal;
   @include flex(flex, space-around,center);
   h1 {
-    color: rgb(18, 18, 18);
-    font-size: 20px;
+    color:nth($color,1);
+    font-size: nth($font ,2);
   }
   .redes a img {
-    width: 50px;
-    height: 50px;
+    @include img(50px,50px)
   }
   .mapa-ubicacion {
     padding: 10px;

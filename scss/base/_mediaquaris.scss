@@ -2,25 +2,23 @@
 
 @media screen and (max-width: 1080px) {
   .nosotros p {
-    font-size:nth($font , 7);
+    font-size: nth($font, 7);
   }
 
   .nosotros img {
-    width: 300px;
-    height: 150px;
+    @include img(300px,150px);
   }
 
   .promocion h2 {
-    font-size: nth($font , 3);
+    font-size: nth($font, 3);
   }
 
   .promocion p {
-    font-size: nth($font , 2);
+    font-size: nth($font, 2);
   }
 
   .promocion img {
-    width: 200px;
-    height: 300px;
+    @include img(200px,300px);
   }
 }
 
@@ -40,20 +38,20 @@
 
 @media screen and (max-width: 925px) {
   .novedades p {
-    font-size: nth($font , 8);
+    font-size: nth($font, 8);
     text-align: center;
   }
 }
 
 @media screen and (max-width: 879px) {
   .hero h1 {
-    font-size: nth($font , 9);
+    font-size: nth($font, 9);
   }
-  .promocion{
+  .promocion {
     height: 250px;
   }
-  .promocion p{
-    font-size: nth($font , 8);
+  .promocion p {
+    font-size: nth($font, 8);
   }
   .promocion img {
     height: 150px;
@@ -62,7 +60,7 @@
 
 @media screen and (max-width: 800px) {
   .nosotros {
-    font-size: nth($font , 4);
+    font-size: nth($font, 4);
   }
 
   .hero {
@@ -70,8 +68,6 @@
     height: 300px;
   }
 }
-
-
 
 @media screen and (max-width: 668px) {
   .nosotros h2 {
@@ -84,11 +80,11 @@
   }
 
   .nosotros p {
-    font-size: nth($font , 8);
+    font-size: nth($font, 8);
   }
 
   .promocion p {
-    font-size: nth($font , 8);
+    font-size: nth($font, 8);
   }
 
   .hero {
@@ -102,18 +98,18 @@
   }
 }
 @media screen and (max-width: 621px) {
-.promocion{
-  font-size: nth($font , 2);
-  margin: 5px;
-}
-.promocion img{
-  width: 90px;
-}
-.promocion a{
-  font-size: nth($font , 8);
-  bottom: 20px;
-  border-radius: 10px;
-}
+  .promocion {
+    font-size: nth($font, 2);
+    margin: 5px;
+  }
+  .promocion img {
+    width: 90px;
+  }
+  .promocion a {
+    font-size: nth($font, 8);
+    bottom: 20px;
+    border-radius: 10px;
+  }
 }
 
 @media screen and (max-width: 572px) {
@@ -124,16 +120,14 @@
 
 @media screen and (max-width: 565px) {
   .video-contenedor iframe {
-    width: 400px;
-    height: 200px;
+    @include video(400px,200px);
   }
-  
-  .grid-imagenes h3{
-    font-size: nth($font , 2);
+
+  .grid-imagenes h3 {
+    font-size: nth($font, 2);
   }
   .hero {
-    width: 100%;
-    height: 300px;
+    @include img(100%,300px);
     background-image: url("../img/foto\ grupal.JPG");
     background-attachment: scroll;
   }
@@ -141,25 +135,25 @@
 
 @media screen and (max-width: 552px) {
   .hero h1 {
-    font-size: nth($font , 10);
+    font-size: nth($font, 10);
   }
 
   .novedades h2 {
-    font-size: nth($font , 1);
+    font-size: nth($font, 1);
   }
 
   .grid-imagenes {
     display: grid;
     grid-column: auto;
   }
-  .promocion p{
+  .promocion p {
     display: none;
   }
 }
 
 @media screen and (max-width: 497px) {
   .promocion h3 {
-    font-size: nth($font , 8);
+    font-size: nth($font, 8);
   }
 
   .promocion img {
@@ -174,34 +168,31 @@
     grid-gap: 5px;
   }
   .grid-imagenes h3 {
-    font-size: nth($font , 1);
+    font-size: nth($font, 1);
   }
-    .img-7 {
+  .img-7 {
     grid-column: span 1;
   }
-    .img-8 {
+  .img-8 {
     grid-column: span 1;
   }
-  
-
 }
 
 @media screen and (max-width: 480px) {
   .novedades p {
-    font-size: nth($font , 8);
+    font-size: nth($font, 8);
   }
   .promocion {
     height: 250px;
   }
   .promocion p {
-    font-size: nth($font , 8);
+    font-size: nth($font, 8);
   }
   .promocion img {
-    width: 200px;
-    height: 200px;
+    @include img(200px,200px);
   }
-  .promocion a{
-    font-size: nth($font , 1);
+  .promocion a {
+    font-size: nth($font, 1);
   }
 }
 
@@ -213,62 +204,91 @@
   .img-8 {
     grid-column: span 1;
   }
-  .promocion h2{
-  font-size: nth($font , 2);
+  .promocion h2 {
+    font-size: nth($font, 2);
   }
-  .promocion a{
-    font-size: nth($font , 8);
+  .promocion a {
+    font-size: nth($font, 8);
   }
-  .promocion img{
+  .promocion img {
     width: 150px;
   }
 }
-@media screen and (max-width: 420px) {
-  .promocion h2{
-  font-size: nth($font , 1);
-  }
-
+@media screen and (max-width: 440px) {
+  form {
+    font-size: nth($font , 1);
+    @include espacio(10px,20px);
+    width: 300px;
+}
+.center-content {
+  width: 50%;
+  padding: 5px;
+}
+.datos-personales {
+  a img{
+    @include img(200px,200px);
+}}
+.datos-personales h1 {
+font-size: nth($font , 2);
+}
+.video-contenedor iframe {
+  @include video(300px,200px);
+}
 }
 
+@media screen and (max-width: 420px) {
+  .promocion h2 {
+    font-size: nth($font, 1);
+  }
+}
 
 @media screen and (max-width: 410px) {
   .promocion h2 {
-   font-size: nth($font , 8);
+    font-size: nth($font, 8);
   }
   .promocion p {
-    font-size: nth($font , 8);
+    font-size: nth($font, 8);
   }
 }
 @media screen and (max-width: 406px) {
   .video-contenedor iframe {
-    width: 300px;
-    height: 100px;
+    @include video(300px,100px);
   }
 }
-  
-  @media screen and (max-width: 385px) {
-    .promocion a{
-      font-size: 8px;
-    }
+
+@media screen and (max-width: 385px) {
+  .promocion a {
+    font-size: 8px;
+  }
 }
 
 @media screen and (max-width: 372px) {
-  .promocion h2{
-  font-size: nth($font , 8);
-}
-.promocion a {
-  font-size:5px ;
-}
-.promocion img {
-  width: 150px;
-}
+  .promocion h2 {
+    font-size: nth($font, 8);
+  }
+  .promocion a {
+    font-size: 5px;
+  }
+  .promocion img {
+    width: 150px;
+  }
 }
 @media screen and (max-width: 354px) {
-  .promocion a{
+  .promocion a {
     font-size: 8px;
   }
   .promocion img {
     width: 100px;
+  }
+}
+
+@media screen and (max-width: 604px) {
+  .club h2 {
+    font-size: 30px;
+  }
+
+  .club img {
+    display: flow-root;
   }
 }
 

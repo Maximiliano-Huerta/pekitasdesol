@@ -5,8 +5,7 @@
     text-align: center;
   }
   img {
-    height: 300px;
-    width: 300px;
+    @include img (300px,300px);
     padding: 10px;
   }
   p {
@@ -17,5 +16,4 @@
 .mapa-ubicacion {
   align-items: center;
 }
-
 

@@ -1,25 +1,21 @@
 /* index*/
 .hero {
-  width: 100%;
-  height: 600px;
+  @include img(100%,600px);
   background-image: url("../img/foto\ grupal.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
-}
-.hero {
   @include flex(flex, flex-end, center);
   flex-direction: column;
-}
-.hero h1 {
+  h1 {
   font-family: cursive;
   font-size: nth($font, 6);
   text-align: center;
   color: $color-terciario;
-  text-shadow: 5px 5px 5px rgb(22, 22, 21);
+  text-shadow: 5px 5px 5px nth($color,1);
 }
-
+}
 
 
 /* seccion Nosotros*/
@@ -28,7 +24,6 @@
   @include flex(flex, space-evenly, center);
   padding: 15px;
   margin-right: 10px;
-
   div {
     width: 500%;
   }
@@ -43,8 +38,7 @@
     margin: 5px;
   }
   img {
-    width: 500px;
-    height: 300px;
+    @include img (500px,300px);
     padding: 5px;
   }
   }
@@ -75,22 +69,21 @@
     bottom: 40px;
     border-radius: 10px;
     background-color: nth($color, 1);
-    margin: 10px;
-    padding: 5px;
+    @include espacio (5px,10px);
   }
   div {
     padding: 5px;
     overflow: hidden;
   }
   img {
-    width: 250px;
-    height: 250px;
+    @include img(250px,250px);
     border-radius: 15px;
     transition: 1s;
+    &:hover{
+      transform: scale(1.4);
+    }
   }
-  img:hover {
-    transform: scale(1.4);
-  }
+
 }
 
 /* novedades */
@@ -107,10 +100,8 @@
   grid-auto-rows: 200px;
   padding: 10px;
   grid-gap: 10px;
-
   div img {
-    width: 100%;
-    height: 100%;
+    @include img(100%,100%);
     object-fit: cover;
   }
   h3 {

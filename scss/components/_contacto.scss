@@ -1,16 +1,13 @@
 h3 {
   font-size: nth($font , 4);
-  padding: 10px;
-  margin: 20px;
+  @include espacio(10px,20px);
 }
 form {
-  align-content: center;
   background-color: $color-secundario;
   border-radius: 5px;
   color: nth($color, 1);
   font-size: nth($font , 1);
-  padding: 10px;
-  margin: 20px;
+  @include espacio(10px,20px);
   width: 400px;
   p {
     margin: 5px;
@@ -22,7 +19,6 @@ textarea {
   border: 0;
   outline: none;
   width: 100%;
-  justify-content: center;
 }
 
 .field {
@@ -44,8 +40,7 @@ textarea {
   display: grid;
   justify-content: center;
   a img{
-  width: 300px;
-  height: 300px;
+    @include img (300px,300px);
   margin: 10px;
 }
   h1{
@@ -54,15 +49,13 @@ text-align: center;
 }
 }
 .video-contenedor iframe {
-  padding: 10px;
-  margin: 10px;
+  @include espacio(10px,10px);
 }
 
 @media screen and (max-width: 440px) {
   form {
     font-size: nth($font , 1);
-    padding: 10px;
-    margin: 20px;
+    @include espacio(10px,20px);
     width: 300px;
 }
 .center-content {
@@ -71,14 +64,12 @@ text-align: center;
 }
 .datos-personales {
   a img{
-  width: 200px;
-  height: 200px;
+    @include img(200px,200px);
 }}
 .datos-personales h1 {
 font-size: nth($font , 2);
 }
 .video-contenedor iframe {
-width: 300px;
-height: 200px ;
+  @include video (300px,200px);
 }
 }
